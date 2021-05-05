@@ -8,3 +8,9 @@ services:
       - ${PWD}/servers.json:/server/servers.json
     ports:
       - "8080:8080"
+  ingress:
+    image: nginx
+    volumes:
+      - ./nginxconf/:/etc/nginx/conf.d/
+    ports:
+      - 8000:8000

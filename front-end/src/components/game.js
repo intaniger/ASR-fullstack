@@ -126,6 +126,7 @@ export default class Game extends React.Component {
 
     return (
       <div>
+        <h1>ควย</h1>
         <div className="game">
           <div className="game-board">
             <Board
